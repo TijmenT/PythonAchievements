@@ -1,6 +1,7 @@
 import time
 from datetime import date
 
+start_over = 1
 
 repeat = "ja"
 
@@ -21,7 +22,16 @@ while repeat[0] not in ("nee"):
         print (time.strftime("%H:%M:%S"))
     else:
         print("Oke!")
-
+    question = input("Wilt u een rekensom uitvoeren?: ")
+    if question == "ja":
+        time.sleep(1)
+        question = input("ja voor optellen, nee voor vermenigvuldigen: ")
+        if question == "ja":
+            print("Voor hier het eerste getal in: ")
+            getala = input()
+            print("Voer hier het tweede getal in: ")
+            getalb = input()
+            print("Uw getal is: " + 5+5)           
     time.sleep(1)
     print("Wilt u het programma opnieuw uitvoeren?: ")
     repeat = input()
