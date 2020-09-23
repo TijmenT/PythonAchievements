@@ -1,2 +1,5 @@
+print("Hallo")
+naam = input("Wat is je naam?: ")
 leeftijd = input("Hoe oud ben je?: ")
-print("Aha, je bent dus " + leeftijd + " jaar oud, leuk zeg!")
+woon = input("Waar woon je?: ")
+print("Aha, je bent dus " + naam + " en je bent "+ leeftijd + " jaar oud en je woont in " + woon + " leuk zeg!")
